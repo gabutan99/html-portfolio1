@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --accent-color: #8d6b0d;
+    --primary-color: #2c3447;
+    --secondary-color: #101113;
+    --text-color: #d9d9d9;
+    --secondary-text-color: #7f8082;
+}
+
+html {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    font-size: 14pt;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+header {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    display: flex;
+
+}
+
+.header-container {
+    width: 1000px;
+    max-width: 100%;
+
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-top: 200px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+header p {
+    margin-top: 25px;
+    font-size: 1rem;
+    font-weight: 150;
+}
+
+header img {
+    height: 60vh;
+    aspect-ratio: 9/8;
+    object-fit: cover;
+    filter: brightness(120%);
+
+}
+
+header a {
+    background-color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 15px 25px;
+    border-radius: 1000px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: inline-flex;
+    transition: .75ms ease;
+    cursor: pointer;
+}
+
+.readmore {
+    text-align: center;
+}
+
+header a:hover {
+    scale: 1.1;
+    background-color: var(--secondary-color);
+}
+
+#readmore {
+    background-color: var(--secondary-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+#readmore h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    width: 400px;
+    max-width: 100%;
+    border: 10px solid var(--primary-color);
+    border-top: none;
+}
+
+.skill-container h3 {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.skill-container ul {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.skill-container ul li {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-container ul li progress {
+    accent-color: var(--accent-color);
+}
+
+#section-project {
+    padding: 10px;
+    background-color: #2c3447;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section-project h2 {
+    font-size: 3rem;
+    padding: 25px;
+}
+
+details {
+    margin: 10px auto;
+    background-color: var(--secondary-color);
+    width: 1000px;
+    max-width: 100%;
+
+}
+
+details summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+    padding: 30px;
+}
+
+details .number {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.text-container {
+    padding: 25px;
+
+}
+
+details .skill-container {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+details .project-link {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: larger;
+    cursor: pointer;
+    transition: .75ms ease;
+}
+
+details .project-link:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 100px;
+}
+
+footer .grid-container {
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+footer #at-symbol {
+    font-size: 200px;
+}
+
+footer h3 {
+    font-size: 3rem;
+}
+
+footer a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 2rem;
+}
+
+footer a:hover {
+    color: var(--text-color);
+}
+
+@media(max-width:1000px) {
+    header {
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-top: 0;
+        font-size: 10vw;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    header img {
+        display: none;
+    }
+
+    footer .grid-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+
+    footer #at-symbol {
+        font-size: 100pt;
+    }
+}
